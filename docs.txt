@@ -1,0 +1,17 @@
+- frontend
+html, css, javascript: https://developer.mozilla.org/en-US/
+vuejs:
+   1. https://v3.vuejs.org (vuejs)
+   2. https://next.router.vuejs.org (vue-router)
+   3. https://next.vuex.vuejs.org (vuex optional)
+
+- backend
+nodejs: 
+ (LTS) https://nodejs.org/dist/latest-v14.x/docs/api/ 
+ (CURRENT) https://nodejs.org/dist/latest-v15.x/docs/api/
+electron: https://www.electronjs.org/docs
+systeminformation: https://www.npmjs.com/package/systeminformation
+wappalyzer: https://www.npmjs.com/package/wappalyzer
+
+- linter
+eslint: https://eslint.org/docs/rules/
