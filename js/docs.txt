@@ -1,0 +1,11 @@
+- frontend
+html, css, javascript: https://developer.mozilla.org/en-US/
+
+- backend
+nodejs: https://nodejs.org/ (using LTS)
+electron: https://www.electronjs.org/docs
+systeminformation: https://www.npmjs.com/package/systeminformation
+wappalyzer: https://www.npmjs.com/package/wappalyzer
+
+- linter
+eslint: https://eslint.org/docs/rules/

@@ -14,12 +14,12 @@ module.exports = defineComponent({
   // template
   template: `
     <main>
-            {{cpuInfo}}
-            {{ramInfo}}
-            {{osDetail}}
-            {{diskInfo}}
-            {{graphicsInfo}}
-   </main>
+      <p>{{cpuInfo}}</p>
+      <p>{{ramInfo}}</p>
+      <p>{{osDetail}}</p>
+      <p>{{diskInfo}}</p>
+      <p>{{graphicsInfo}}</p>
+    </main>
   `,
   setup() {
     // start states
@@ -28,7 +28,6 @@ module.exports = defineComponent({
     const osDetail = ref({});
     const disksInfo = ref({});
     const graphicsInfo = ref({});
-    const activeTabs = ref(1);
 
     onMounted(async () => {
       try { 
@@ -47,8 +46,7 @@ module.exports = defineComponent({
       ramInfo,
       osDetail,
       disksInfo,
-      graphicsInfo,
-      activeTabs
+      graphicsInfo
     };
   }
 });

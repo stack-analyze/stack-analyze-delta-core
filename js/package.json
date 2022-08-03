@@ -1,0 +1,23 @@
+{
+  "name": "stack-analyze-delta",
+  "version": "2.0.0",
+  "description": "",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "analyze",
+    "stack"
+  ],
+  "author": "omega5300",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "systeminformation": "^5.12.1",
+    "wappalyzer": "^6.10.38"
+  },
+  "devDependencies": {
+    "electron": "^19.0.9",
+    "eslint": "^8.20.0"
+  }
+}

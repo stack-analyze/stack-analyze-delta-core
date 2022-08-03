@@ -1,6 +1,6 @@
 {
   "name": "stack-analyze-delta",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "app/main.js",
   "scripts": {
@@ -10,16 +10,16 @@
     "analyze",
     "stack"
   ],
-  "author": "",
+  "author": "omega5300",
   "license": "GPL-3.0",
   "dependencies": {
-    "systeminformation": "^4.34.5",
-    "wappalyzer": "^6.5.22",
-    "vue": "^3.0.5",
-    "vue-router": "^4.0.2",
+    "systeminformation": "^5.12.1",
+    "wappalyzer": "^6.10.38",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.2"
   },
   "devDependencies": {
-    "electron": "^11.1.1",
-    "eslint": "^7.17.0"
+    "electron": "^19.0.9",
+    "eslint": "^8.20.0"
   }
 }

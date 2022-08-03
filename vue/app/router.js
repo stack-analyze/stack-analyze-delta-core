@@ -3,6 +3,7 @@ const { createRouter, createWebHashHistory } = require('vue-router');
 // pages
 const Stack = require('./pages/stack');
 const Hardware = require('./pages/hardware');
+const Password = require('./pages/password')
 
 // 2. Define some routes
 // Each route should map to a component.
@@ -17,6 +18,11 @@ const routes = [
     path: '/info', 
     component: Hardware,
     name: 'Hardware Information'
+  },
+  { 
+    path: '/password', 
+    component: Password,
+    name: 'Password Generator'
   }
 ];
 

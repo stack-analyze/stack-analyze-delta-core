@@ -1,0 +1,4 @@
+this core version using two options but same generation tools
+
+1. vue option (not using sfc) spa
+2. js option mpa

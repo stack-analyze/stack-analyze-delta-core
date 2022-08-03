@@ -1,6 +1,6 @@
 // modules
 const { shell } = require('electron');
-const { reactive, computed, defineComponent } = require('vue');
+const { ref, computed, defineComponent } = require('vue');
 const Wappalyzer = require('wappalyzer');
 
 module.exports = defineComponent({
@@ -22,10 +22,6 @@ module.exports = defineComponent({
   setup() {
     const url = ref('');
     const apps = ref([]);
-    const stack = reactive({
-      url: '',
-      apps: []
-    });
 
     const singleStack = async () => {
       const wappalyzer = new Wappalyzer();
@@ -36,20 +32,20 @@ module.exports = defineComponent({
         if(technologies[0] === undefined) {
           alert('no tech-stack or no internet');
         } else {
-          stack.apps = technologies;
+          apps.value = technologies;
         }
       } catch (err) {
         alert(err);
       }
       await wappalyzer.destroy();
-      stack.url = '';
+      url.value = '';
     };
 
     const reset = () => (stack.apps = []);
     
     const regex = RegExp('(http|https?:\\/\\/)?((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|((\\d{1,3}\\.){3}\\d{1,3}))(\\:\\d+)?(\\/[-a-z\\d%_.~+@]*)*(\\?[;&a-z\\d%_.~+=-@]*)?(\\#[-a-z\\d_@]*)?$', 'i');
 
-    const validateButton = computed(() => (stack.url.match(regex) ? false : true));
+    const validateButton = computed(() => (url.value.match(regex) ? false : true));
 
     return {
       url,
