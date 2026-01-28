@@ -3,7 +3,8 @@ const { createRouter, createWebHashHistory } = require('vue-router');
 // pages
 const Stack = require('./pages/stack');
 const Hardware = require('./pages/hardware');
-const Password = require('./pages/password')
+const Password = require('./pages/password');
+const Magicball = require('./pages/magiball')
 
 // 2. Define some routes
 // Each route should map to a component.
@@ -23,6 +24,11 @@ const routes = [
     path: '/password', 
     component: Password,
     name: 'Password Generator'
+  },
+  {
+    path: '/magicball',
+    component: Magicball,
+    name: 'Magic ball'
   }
 ];
 

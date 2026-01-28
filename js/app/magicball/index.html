@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tech stack</title>
+    <title>Magic ball</title>
 </head>
-
 <body>
-    <!-- replace for new dev -->
     <nav>
         <menu>
             <li>
@@ -26,19 +22,33 @@
             </li>
         </menu>
     </nav>
+
     <main>
         <form id="form">
             <div>
-                <input id="website" placeholder="enter a website" type="url" />
+                <select id="locale">
+                    <option value="">Select a question</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                </select>
             </div>
-            <button id="validate-link" type="submit" disabled>analyze website</button>
+            <div>
+                <input 
+                    id="question" 
+                    placeholder="enter a question" 
+                    type="text" 
+                    minlength="8"
+                    disabled
+                >
+            </div>
+
+            <button id="get" type="submit" disabled>get answer</button>
         </form>
-        <button id="reset">Reset analyze</button>
-        <section id="apps"></section>
+        <button id="reset">reset answer</button>
+
+        <p id="answer"></p>
     </main>
-    
-    <!-- default no replace -->
+
     <script src="renderer.js"></script>
 </body>
-
 </html>

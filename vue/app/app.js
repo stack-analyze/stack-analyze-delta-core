@@ -14,6 +14,9 @@ const App = defineComponent({
         <li>
           <router-link to="/password">password generator</router-link>
         </li>
+        <li>
+          <a href="/magicball">magic ball</a>
+        </li>
       </menu>
     </nav>
     <router-view></router-view>
